@@ -5,7 +5,7 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-app.use(express.json());
+app.use(express.json()); // allows us to accept JSON data
 
 app.use('/api/contacts', require('./routes/contactRoutes')); //Usually know as middleware
 
